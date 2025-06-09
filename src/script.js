@@ -40,7 +40,7 @@ generateBtn.addEventListener('click', fetchCatImages);
 settingsForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const newLimit = parseInt(document.getElementById('image-limit').value);
-    Settings,imageLimit = newLimit;
+    Settings.imageLimit = newLimit;
     console.log(`Settings updated: Limit = ${Settings.imageLimit}`);
 });
 
