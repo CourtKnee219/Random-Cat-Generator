@@ -63,9 +63,12 @@ function displayCatImage(catData) {
     img.src = catData.url;
     img.alt = "Random cat";
     img.width = 300;
-}
+
 
 // Mouseover Image Event Listener
 img.addEventListener('mouseover', () => {
     console.log("Look! A Kitty! <3");
 });
+
+    catContainer.appendChild(img);
+}
