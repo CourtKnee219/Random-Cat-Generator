@@ -29,6 +29,11 @@ const Tag = {
     type: ""
 };
 
+// DOM Elements
+const generateBtn = document.getElementById('generate-btn');
+const catContainer = document.getElementById('cat-container');
+const settingsForm = document.getElementById('settings-form');
+
 // Fetch Cat Image Function
 function fetchCatImage() {
     fetch('https://api.thecatapi.com/v1/images/search')
