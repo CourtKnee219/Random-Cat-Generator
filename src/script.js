@@ -43,3 +43,16 @@ settingsForm.addEventListener('submit', (e) => {
     Settings,imageLimit = newLimit;
     console.log(`Settings updated: Limit = ${Settings.imageLimit}`);
 });
+
+// Fetch cat Images (+Array Iteration)
+function fetchCatImages() {
+  fetch(`https://api.thecatapi.com/v1/images/search?limit=${Settings.imageLimit}`)
+    .then(res => res.json())
+    .then(data => {
+      catContainer.innerHTML = '';
+      data.forEach(cat => displayCatImage(cat));
+    })
+    .catch(err => {
+      catContainer.innerHTML = `<p>Error fetching cat images. Try again later.</p>`;
+    });
+}
