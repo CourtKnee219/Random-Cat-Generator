@@ -34,15 +34,5 @@ const generateBtn = document.getElementById('generate-btn');
 const catContainer = document.getElementById('cat-container');
 const settingsForm = document.getElementById('settings-form');
 
-// Fetch Cat Image Function
-function fetchCatImage() {
-    fetch('https://api.thecatapi.com/v1/images/search')
-    .then(res => res.json())
-    .then(data => {
-        const cat = data[0];
-        displayCatImage(cat);
-    })
-    .catch(err => {
-        CredentialsContainer.innerHTML = `<p>Oops! Something went wrong</p>`;
-    });
-}
+// Click Event Listener
+generateBtn.addEventListener('click', fetchCatImages);
