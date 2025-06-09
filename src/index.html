@@ -10,7 +10,13 @@
     <header>
         <h1>Random Cat Generator</h1>
     </header>
-
+    <section class="controls">
+        <form id="setting-form">
+            <label for="image-limit">How many cats?</label>
+            <input type="number" id="image-limit" min="1" max="10" value="1" required />
+            <button type="submit">Update Settings</button>
+        </form>
+    </section>
 
     <script src="script.js"></script>
 </body>
