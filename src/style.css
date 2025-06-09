@@ -31,3 +31,7 @@ button {
     gap: 20px;
     padding: 20px;
 }
+
+#cat-container img:hover {
+    transform: scale(1.05);
+}
