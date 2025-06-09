@@ -56,3 +56,11 @@ function fetchCatImages() {
       catContainer.innerHTML = `<p>Error fetching cat images. Try again later.</p>`;
     });
 }
+
+// Display Image
+function displayCatImage(catData) {
+    const img = document.createElement('img');
+    img.src = catData.url;
+    img.alt = "Random cat";
+    img.width = 300;
+}
