@@ -28,3 +28,16 @@ const Tag = {
     name: "",
     type: ""
 };
+
+// Fetch Cat Image Function
+function fetchCatImage() {
+    fetch('https://api.thecatapi.com/v1/images/search')
+    .then(res => res.json())
+    .then(data => {
+        const cat = data[0];
+        displayCatImage(cat);
+    })
+    .catch(err => {
+        CredentialsContainer.innerHTML = `<p>Oops! Something went wrong</p>`;
+    });
+}
