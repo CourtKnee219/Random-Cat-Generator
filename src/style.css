@@ -10,3 +10,16 @@ header {
     background-color: #ffc6d0;
     padding: 1rem;
 }
+
+form {
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+}
