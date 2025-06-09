@@ -36,3 +36,10 @@ const settingsForm = document.getElementById('settings-form');
 
 // Click Event Listener
 generateBtn.addEventListener('click', fetchCatImages);
+// Submit Form Event Listener
+settingsForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const newLimit = parseInt(document.getElementById('image-limit').value);
+    Settings,imageLimit = newLimit;
+    console.log(`Settings updated: Limit = ${Settings.imageLimit}`);
+});
